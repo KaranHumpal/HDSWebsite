@@ -1,4 +1,4 @@
-body{
+body .index{
 	height:  2000vh;
 }
 
@@ -19,4 +19,8 @@ h1 {
   font-weight: bold;
   color: #fff;
   font-size: 84px;
+}
+body.services{
+	height: 2000vh;
+	
 }
