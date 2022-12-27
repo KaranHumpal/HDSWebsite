@@ -27,7 +27,7 @@ body .index{
 .navbar-nav{
 	padding-top: 25px;
 	padding-bottom: 5px;
-	padding-left: 5px;
+	padding-left: 25px;
 	font-size: 22px;
 	font-family:'Montserrat', sans-serif ;
 	border-radius: 0;
@@ -53,7 +53,7 @@ h1 {
   font-family: 'CopperplateBold';
   line-height: 110%;
   letter-spacing: 1.4px;
-  padding-top: -200px;
+  padding-top: -300px;
 
 }
 p{
@@ -62,7 +62,7 @@ p{
 	font-family: 'CopperplateBold';
 	line-height: 110%;
 	letter-spacing: 1.4px;
-	padding-top: 50px;
+	padding-top: 25px;
 }
 body.services{
 	height: 2000vh;
