@@ -1,11 +1,17 @@
 body{
+	height:  2000vh;
+}
 
+.container{
+	width: 100%;
+	height: 600px;
+	background-position: center;
+	background-size: cover;
+	background-image:  url("../images/Homepage_Background.jpg");
+	background-attachment: fixed;
 
-	background: url("../images/Homepage_Background.jpg") no-repeat center center fixed;
-  	-webkit-background-size: cover;
-  	-moz-background-size: cover;
-  	-o-background-size: cover;
-  	background-size: cover;
-
-  	padding : 0px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
 }
