@@ -21,12 +21,15 @@
 body .index{
 	height:  2000vh;
 }
+.navbar-left{
+	padding-top: 17px;
+}
 .navbar-header{
-	padding-top: 25px;
+	padding-top: 0px;
 }
 .navbar-nav{
-	padding-top: 25px;
-	padding-bottom: 5px;
+	padding-top: 17px;
+	padding-bottom: 0px;
 	padding-left: 25px;
 	font-size: 22px;
 	font-family:'Montserrat', sans-serif ;
@@ -35,7 +38,7 @@ body .index{
 }
 .container1{
 	width: 100%;
-	height: 650px;
+	height: 800px;
 	background-position: center;
 	background-size:auto;
 	background-image: url("../images/home.jpg");
@@ -64,6 +67,14 @@ p{
 	letter-spacing: 1.4px;
 	padding-top: 25px;
 }
+.row {
+	display: flex;
+  }
+  
+  .column {
+	flex: 50%;
+	padding-left: 30px;
+  }
 body.services{
 	height: 2000vh;
 	
