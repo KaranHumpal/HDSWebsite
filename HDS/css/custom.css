@@ -70,7 +70,10 @@ p{
 .row {
 	display: flex;
   }
-  
+
+  .container2{
+	width: 99%;
+  }
   .column1 {
 	padding-left: 80px;
 	text-align: center;
