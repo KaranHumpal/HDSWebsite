@@ -71,12 +71,28 @@ p{
 	display: flex;
   }
   
-  .column {
-	flex: 50%;
+  .column1 {
+	padding-left: 80px;
+	text-align: center;
+	flex: 40%;
+	padding-top: 185px;
+	height: 770px ;
+  }
+  .Photo1{
+	border: double black 10px;
+  }
+  .column2 {
+	text-align:justify;
+	padding-top: 215px;  
+	padding-left: 25px;
+	font-family: 'georgia';   
+	font-weight: bold;   
+	font-size: 30px;
+	flex: 60%;
 	padding-left: 30px;
   }
 body.services{
-	height: 2000vh;
+	height: 1000px;
 	
 }
 
