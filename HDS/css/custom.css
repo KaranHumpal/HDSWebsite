@@ -90,7 +90,7 @@ p{
 	font-family: 'Franklin Gothic Medium', sans-serif; 
 	line-height: 99.99%;
 	letter-spacing: 1px;
-	padding-top: 10px;
+	padding-top: 100px;
 }
 .row {
 	display: flex;
@@ -98,13 +98,13 @@ p{
 
   .container2{
 	width: 99.99%;
-	background-image: url("../images/computer-engineering-science-tech-wallpaper-thumb.jpg");
+	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
 	align-items: center;
 
   }
   .col-md-6{
   	text-align:justify;
-	padding-top: 215px;  
+	padding-top: 125px;  
 	padding-left: 25px;
 	padding-right:100px;
 	color: #000000;
@@ -125,23 +125,114 @@ p{
   }
 
 
-  .column2 {
-	text-align:justify;
-	padding-top: 215px;  
-	padding-left: 25px;
-	padding-right:100px;
-	color: #ffffff;
 
-	font-family: 'georgia';   
-	font-weight: bold;   
-	font-size: 30px;
-	flex: 60%;
-	padding-left: 30px;
+  /**ABOUT PAGE **/
+  .bodyAbout {
+	font-family: Helvetica, sans-serif;
+	text-align: center;
+	font-size: 50;
   }
+   
+  /* Styling the area of the slides */
+  #slideshow {
+	overflow: hidden;
+	height: 400px;
+	width: 600px;
+	margin: 0 auto;
+  }
+   
+  /* Style each of the sides
+  with a fixed width and height */
+  .slide {
+	float: left;
+	height: 400px;
+	width: 600px;
+  }
+   
+  /* Add animation to the slides */
+  .slide-wrapper {
+	 
+  /* Calculate the total width on the
+	basis of number of slides */
+	width: calc(600px * 4);
+   
+  /* Specify the animation with the
+	duration and speed */
+	animation: slide 15s ease infinite;
+  }
+   
+  /* Set the background color
+  of each of the slides */
+  .slide:nth-child(1) {
+	background-image: url("../images/Haas.JPG");
+    object-fit: cover;
+	border-radius: 15%;
+  }
+  .slide:nth-child(2) {
+	background-image: url("../images/machine14.jpg");
+	object-fit: cover;
+	border-radius: 15%;
+  }
+   
+  .slide:nth-child(3) {
+	background-image: url("../images/machine2.jpg");
+	object-fit: cover;
+	border-radius: 15%;
+  }
+   
+  .slide:nth-child(4) {
+	background-image: url("../images/machine3.jpg");
+	object-fit: cover;
+	border-radius: 15%;
+  }
+   
+  /* Define the animation
+  for the slideshow */
+  @keyframes slide {
+	 
+  /* Calculate the margin-left for
+	each of the slides */
+	20% {
+	  margin-left: 0px;
+	}
+   
+	40% {
+	  margin-left: calc(-600px * 1);
+	}
+   
+	60% {
+	  margin-left: calc(-600px * 2);
+	}
+   
+	80% {
+	  margin-left: calc(-600px * 3);
+	}
+  }
+.Aboutrow {
+	display: flex;
+  }
+  
+  .Aboutcolumn {
+	flex: 50%;
+  }
+  .container3{
+	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
+  }
+  .abouttext{
+	font-size: 24px;
+	color: #ffffff;
+	font-family:  'Franklin Gothic Medium', sans-serif;
+  }
+.aboutTitle{
+	font-family: 'Franklin Gothic Medium', sans-serif;
+	font-size: 50px;
+	padding-top: 80px;
+	text-decoration: underline;
+	font-style: italic;
 
-body.services{
-	height: 1000px;
-	
+}
+.col{
+	height: 550px;
 }
 
 input[type=text], select, textarea {
@@ -171,10 +262,12 @@ input[type=submit]:hover {
 }
 
 /* Add a background color and some padding around the form */
-.container {
+.containerContact {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
+  color: #ffffff;
 }
 
 
