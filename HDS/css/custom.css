@@ -54,6 +54,9 @@ body .index{
 	flex-direction: column;
 	text-align: center;
 }
+.col-md-6{
+	padding-bottom: 150px;
+}
 
 #text{
 	font-family: FreeSans;
@@ -62,30 +65,41 @@ body .index{
 h1 {
   color: #fff;
   font-size: 72px;
-  font-family: 'CopperplateBold';
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', sans-serif; 
   line-height: 110%;
-  letter-spacing: 1.4px;
-  padding-top: -300px;
+  letter-spacing: 1.2px;
+  padding-top: -200px;
 
+}
+h2{
+	color: #ffffff;
 }
 
 p{
 	color: #fff;
-	font-size: 34px;
-	font-family: 'CopperplateBold';
+	font-size: 40px;
+	font-family: 'Franklin Gothic Medium', sans-serif; 
 	line-height: 99.99%;
-	letter-spacing: 1.4px;
-	padding-top: 25px;
+	letter-spacing: 1px;
+	padding-top: 10px;
 }
-
-
+.p2{
+	color: #fff;
+	font-size: 30px;
+	font-family: 'Franklin Gothic Medium', sans-serif; 
+	line-height: 99.99%;
+	letter-spacing: 1px;
+	padding-top: 10px;
+}
 .row {
 	display: flex;
   }
 
   .container2{
 	width: 99.99%;
-	background-color: darkgray;
+	background-image: url("../images/computer-engineering-science-tech-wallpaper-thumb.jpg");
+	align-items: center;
 
   }
   .col-md-6{
@@ -110,6 +124,7 @@ p{
 	height: 770px ;
   }
 
+
   .column2 {
 	text-align:justify;
 	padding-top: 215px;  
@@ -123,6 +138,7 @@ p{
 	flex: 60%;
 	padding-left: 30px;
   }
+
 body.services{
 	height: 1000px;
 	
