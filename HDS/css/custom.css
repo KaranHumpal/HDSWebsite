@@ -216,19 +216,19 @@ p{
 	flex: 50%;
   }
   .container3{
-	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
+	background-image: url("../images/download-1.jpg");
   }
   .abouttext{
 	font-size: 24px;
-	color: #ffffff;
+	color: #0059b3;
 	font-family:  'Franklin Gothic Medium', sans-serif;
   }
 .aboutTitle{
-	font-family: 'Franklin Gothic Medium', sans-serif;
+	color: #0059b3;
+	font-family: 'COPPERPLATE';
 	font-size: 50px;
 	padding-top: 80px;
 	text-decoration: underline;
-	font-style: italic;
 
 }
 .col{
@@ -269,9 +269,31 @@ input[type=submit]:hover {
   background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
   color: #ffffff;
 }
+.map-container-2{
+	overflow:hidden;
+	padding-bottom:56.25%;
+	position:relative;
+	height:0;
+  }
+  .map-container-2 iframe{
+	left:0;
+	top:0;
+	height:100%;
+	width:100%;
+	position:absolute;
+  }
+  map{
+
+  }
 
 
-
+/**Services**/
+.container4{
+	background-image: url("../images/download-1.jpg");
+}
+.col23{
+	object-fit: cover;
+}
 
 
 
@@ -379,3 +401,4 @@ section {
     line-height: 1.8;
   }
 }
+
