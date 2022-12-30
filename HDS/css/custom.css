@@ -108,9 +108,6 @@ p{
 	padding-top: 125px;  
 	padding-left: 25px;
 	padding-right:100px;
-	color: #000000;
-
-	font-family: 'FreeSans;';   
 	font-weight: bold;   
 	font-size: 40px;
 	flex: 60%;
@@ -121,7 +118,7 @@ p{
 	padding-left: 80px;
 	text-align: center;
 	flex: 40%;
-	padding-top: 185px;
+	padding-top: 1px;
 	height: 770px ;
   }
 
@@ -129,7 +126,6 @@ p{
 
   /**ABOUT PAGE **/
   .bodyAbout {
-	font-family: Helvetica, sans-serif;
 	text-align: center;
 	font-size: 50;
   }
@@ -167,24 +163,24 @@ p{
   .slide:nth-child(1) {
 	background-image: url("../images/Haas.JPG");
     object-fit: cover;
-	border-radius: 15%;
+	border: solid black 3px;
   }
   .slide:nth-child(2) {
 	background-image: url("../images/machine14.jpg");
 	object-fit: cover;
-	border-radius: 15%;
+	border: solid black 3px;
   }
    
   .slide:nth-child(3) {
 	background-image: url("../images/machine2.jpg");
 	object-fit: cover;
-	border-radius: 15%;
+	border: solid black 3px;
   }
    
   .slide:nth-child(4) {
 	background-image: url("../images/machine3.jpg");
 	object-fit: cover;
-	border-radius: 15%;
+	border: solid black 3px;
   }
    
   /* Define the animation
@@ -217,16 +213,15 @@ p{
 	flex: 50%;
   }
   .container3{
-	background-image: url("../images/download-1.jpg");
+	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
   }
   .abouttext{
 	font-size: 24px;
-	color: black;
+	color: white;
   }
 .aboutTitle{
-	color: black;
-	font-size: 50px;
-	padding-top: 0px;
+	color: white;
+	font-size: 40px;
 	text-decoration: underline;
 
 }
@@ -281,17 +276,12 @@ input[type=submit]:hover {
 	width:100%;
 	position:absolute;
   }
-  map{
-
-  }
-
-
 /**Services**/
 .container4{
-	background-image: url("../images/download-1.jpg");
+	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
 }
-.col23{
-	object-fit: cover;
+.bodyServices{
+	font-family: 'Franklin Gothic Medium', sans-serif; 
 }
 
 
