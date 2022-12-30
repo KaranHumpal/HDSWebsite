@@ -27,6 +27,7 @@
 body .index{
 	height:  100vh;
 }
+
 .navbar-left{
 	padding-top: 17px;
 }
@@ -46,8 +47,8 @@ body .index{
 	width: 99.99%;
 	height: 800px;
 	background-position: center;
-	background-size:auto;
-	background-image: url("../images/home.jpg");
+	background-size: cover;
+	background-image: url("../images/real.gif") ;
 	color: white;
 	display: flex;
 	justify-content: center;
@@ -220,14 +221,12 @@ p{
   }
   .abouttext{
 	font-size: 24px;
-	color: #0059b3;
-	font-family:  'Franklin Gothic Medium', sans-serif;
+	color: black;
   }
 .aboutTitle{
-	color: #0059b3;
-	font-family: 'COPPERPLATE';
+	color: black;
 	font-size: 50px;
-	padding-top: 80px;
+	padding-top: 0px;
 	text-decoration: underline;
 
 }
