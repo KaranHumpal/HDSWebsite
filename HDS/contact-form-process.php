@@ -16,16 +16,19 @@ if (isset($_POST['Email'])) {
 
     // validation expected data exists
     if (
-        !isset($_POST['Name']) ||
-        !isset($_POST['Email']) ||
-        !isset($_POST['Message'])
+        !isset($_POST['First Name']) ||
+        !isset($_POST['Last Name']) ||
+        !isset($_POST['Email Address']) ||
+        !isset($_POST['Subject'])||
     ) {
         problem('We're sorry, but there appears to be a problem with the form you submitted.');
     }
 
-    $name = $_POST['Name']; // required
-    $email = $_POST['Email']; // required
-    $message = $_POST['Message']; // required
+    $fname = $_POST['First Name']; // required
+    $lname = $_POST['Last Name']; // required
+    $email = $_POST['Email Address']; // required
+    $subject = $_POST['Subject']; // required
+
 
     $error_message = "";
     $email_exp = '/^[A-Za-z0-9._%-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$/';
@@ -36,11 +39,14 @@ if (isset($_POST['Email'])) {
 
     $string_exp = "/^[A-Za-z .'-]+$/";
 
-    if (!preg_match($string_exp, $name)) {
+    if (!preg_match($string_exp, $fname)) {
+        $error_message .= 'The Name you entered does not appear to be valid.<br>';
+    }
+      if (!preg_match($string_exp, $lname)) {
         $error_message .= 'The Name you entered does not appear to be valid.<br>';
     }
 
-    if (strlen($message) < 2) {
+    if (strlen($subject) < 2) {
         $error_message .= 'The Message you entered do not appear to be valid.<br>';
     }
 
@@ -56,9 +62,11 @@ if (isset($_POST['Email'])) {
         return str_replace($bad, "", $string);
     }
 
-    $email_message .= "Name: " . clean_string($name) . "\n";
+    $email_message .= "First Name: " . clean_string($fname) . "\n";
+    $email_message .= "Last Name: " . clean_string($lname) . "\n";
     $email_message .= "Email: " . clean_string($email) . "\n";
-    $email_message .= "Message: " . clean_string($message) . "\n";
+    $email_message .= "Subject: " . clean_string($subject) . "\n";
+
 
     // create email headers
     $headers = 'From: ' . $email . "\r\n" .
