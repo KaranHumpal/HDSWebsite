@@ -1,39 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>Humpal Design Support</title>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+a {color:#0F7CC1;font-family:serif;text-decoration: none;}         /* Unvisited link  */
+a:visited {color:#0F7CC1;font-family:serif;text-decoration: none;} /* Visited link    */
+a:hover {color:#0F7CC1;font-family:serif;text-decoration: none;}   /* Mouse over link */
+a:active {color:#0F7CC1;font-family:serif;text-decoration: none;}  /* Selected link   */
+.container{
+    height: 1000px;
+    background-image: url(../HDS/images/rfq-main_1221820543_edit-scaled.jpg);
+}
+.navbar-header{
+	padding-top: 20px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-size: 22px;
+    font-family: sans-serif ;
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+}
 
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <script src="../HDS/JS/gallery.js"></script>
+.footer-distributed {
+    background-color: #292c2f;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: normal 16px sans-serif;
+    padding: 45px 50px;
+  }
+  
+  .footer-distributed .footer-left p {
+    color: #8f9296;
+    font-size: 14px;
+    margin: 0;
+  }
+  /* Footer links */
+  
+  .footer-distributed p.footer-links {
+    font-size: 18px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 0 0 10px;
+    padding: 0;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed p.footer-links a {
+    display: inline-block;
+    line-height: 1.8;
+    text-decoration: none;
+    color: inherit;
+    transition: ease .25s;
+  }
+  
+  .footer-distributed .footer-links a:before {
+    content: "·";
+    font-size: 20px;
+    left: 0;
+    color: #fff;
+    display: inline-block;
+    padding-right: 5px;
+  }
+  
+  .footer-distributed .footer-links .link-1:before {
+    content: none;
+  }
+  
+  .footer-distributed .footer-right {
+    float: right;
+    margin-top: 6px;
+    max-width: 180px;
+  }
+  
+  .footer-distributed .footer-right a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background-color: #33383b;
+    border-radius: 2px;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 35px;
+    margin-left: 3px;
+    transition:all .25s;
+  }
+  
+  .footer-distributed .footer-right a:hover{transform:scale(1.1); -webkit-transform:scale(1.1);}
+  
+  .footer-distributed p.footer-links a:hover{text-decoration:underline;}
+  
+  /* Media Queries */
+  
+  @media (max-width: 600px) {
+    .footer-distributed .footer-left, .footer-distributed .footer-right {
+      text-align: center;
+    }
+    .footer-distributed .footer-right {
+      float: none;
+      margin: 0 auto 20px;
+    }
+    .footer-distributed .footer-left p.footer-links {
+      line-height: 1.8;
+    }
+  }
+  
+* {box-sizing: border-box}
+body {font-family:sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
-      <link rel="stylesheet" type="text/css" href="css/gallery.css"/>
+/* Slideshow container */
+.slideshow-container {
+    padding-top: 50px;
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
 
-  </head>
-</html>
-  <body>
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
+</style>
+</head>
+<body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
         <div class="navbar-header">
-          <a href="index.html" class="navbar-left"><img src="../HDS/images/Logo.png" width="90"height ="51"></a>
+          <a style="padding-right: 30px;" href="index.html" class="navbar-left"><img src="../HDS/images/Logo.png" width="90"height ="51"><a style="padding-right: 30px;" href="index.html">Home</a><a style="padding-right: 30px;" href="About.html">About</a><a style="padding-right: 30px;" href="Services.html">Services</a><a style="padding-right: 30px;" href="Gallery.html">Gallery</a><a href="Contact.html">Contact</a> </a>
         </div>
-        <ul class="nav navbar-nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="About.html">About</a></li>
-          <li><a href="Services.html">Services</a></li>
-          <li><a href="Gallery.html">Gallery</a></li>
-          <li><a href="Contact.html">Contact</a></li>        
-        </ul>
       </div>
     </nav>
       </header>
-  </body>
-  <footer class="footer-distributed">
+<div class="container">
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 32</div>
+  <img src="../HDS Photos/1.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 32</div>
+  <img src="../HDS Photos/2.JPG" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 32</div>
+  <img src="../HDS/images/serv1.JPG" style="width:100%">
+</div>
+<div class="mySlides fade">
+    <div class="numbertext">4 / 32</div>
+    <img src="../HDS/images/serv2.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 32</div>
+    <img src="../HDS/images/serv3.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 32</div>
+    <img src="../HDS Photos/3.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">7 / 32</div>
+    <img src="../HDS Photos/4.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">8 / 32</div>
+    <img src="../HDS Photos/5.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">9 / 32</div>
+    <img src="../HDS Photos/6.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">10 / 32</div>
+    <img src="../HDS Photos/7.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">11 / 32</div>
+    <img src="../HDS Photos/8.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">12 / 32</div>
+    <img src="../HDS Photos/9.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">13 / 32</div>
+    <img src="../HDS Photos/10.JPG"style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">14 / 32</div>
+    <img src="../HDS Photos/11.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">15 / 32</div>
+    <img src="../HDS Photos/12.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">16 / 32</div>
+    <img src="../HDS Photos/13.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">17 / 32</div>
+    <img src="../HDS Photos/14.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">18 / 32</div>
+    <img src="../HDS Photos/15.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">19 / 32</div>
+    <img src="../HDS Photos/16.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">20 / 32</div>
+    <img src="../HDS Photos/17.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">21 / 32</div>
+    <img src="../HDS Photos/18.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">22 / 32</div>
+    <img src="../HDS Photos/19.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">23 / 32</div>
+    <img src="../HDS Photos/20.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">24 / 32</div>
+    <img src="../HDS Photos/21.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">25 / 32</div>
+    <img src="../HDS Photos/22.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">26 / 32</div>
+    <img src="../HDS Photos/23.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">27 / 32</div>
+    <img src="../HDS Photos/24.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">28 / 32</div>
+    <img src="../HDS Photos/25.JPG"style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">29/ 32</div>
+    <img src="../HDS Photos/26.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">30 / 32</div>
+    <img src="../HDS Photos/27.JPG" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">31 / 32</div>
+    <img src="../HDS Photos/28.JPG" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">32 / 32</div>
+    <img src="../HDS Photos/29.JPG" style="width:100%">
+  </div>
+
+
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+<footer class="footer-distributed">
 
     <div class="footer-right">
 
@@ -61,4 +427,4 @@
     </div>
 
   </footer>
-</html>
+</html> 
