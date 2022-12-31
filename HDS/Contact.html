@@ -11,6 +11,36 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
       <link rel="stylesheet" type="text/css" href="css/custom.css"/>
+      <style>
+        p{
+          font-size: 25px;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+          height: 400px; /* Should be removed. Only for demonstration */
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 600px) {
+          .column {
+            width: 100%;
+          }
+        }
+        </style>
 
   </head>
 </html>
@@ -35,7 +65,10 @@
 
     </div>
 
-    <div class="containerContact">
+
+    <div style="height: 1500px;" class="containerContact">
+      <h1 style="font-size: 40px; text-decoration: underline;">Contact HDS</h1>
+      <br>
       <form action="action_page.php">
         <form id="fcf-form-id" class="fcf-form-class" method="post" action="form-to-email.php">
         <label for="fname">First Name</label>
@@ -55,12 +88,34 @@
         <input type="submit" value="Submit">
 
       </form>
+      <br>
+      <br>
+      <div class="row">
+        <div class="column" style="border: white solid 5px;">
+          <p style="font-weight:bold; text-decoration: underline;">Address: <p> 3338 Arden Road, Hayward CA 94545</p>
+          <p style="font-weight:bold; text-decoration: underline;">Phone: <p>(510)786-1683</p>
+          <p style="font-weight:bold; text-decoration: underline;">Fax: <p>(510) 786-1678</p>
+          <p style="font-weight:bold; text-decoration: underline;">Email:<p>humpal_design@yahoo.com</p>
+        </div>
+        <div class="column" style="border: white solid 5px;">
+          <br>
+          <br>
+          <p style="font-size: 45px;">To request a complimentary quotation, please e-mail us your DXF, IGES, or DWG design files. We will send you a quote immediately after reviewing your design (usually within a day)</p>
+        </div>
+      </div>
+      <br>
+      <br>
       <!--Google map-->
-<div id="map-container-google-2" class="z-depth-1-half map-container" style="height: 500px;">
-    <iframe src="https://www.google.com/maps/place/3338+Arden+Rd,+Hayward,+CA+94545/@37.6196505,-122.1079011,17z/data=!3m1!4b1!4m5!3m4!1s0x808f969557f08743:0xb62ac2afbd0330a3!8m2!3d37.6196463!4d-122.1057124" frameborder="0"
-      style="border:0" allowfullscreen></iframe>
-  </div>
-  
+      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12641.038592023282!2d-122.1056897!3d37.6195798!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa4edf3ed1b69c211!2sHumpal%20Design%20Support!5e0!3m2!1sen!2sus!4v1672456267115!5m2!1sen!2sus"
+                          width="1300"
+                          height="300"
+                          frameborder="0"
+                          style="padding-left: 100px;"
+                          allowfullscreen="true"
+                          aria-hidden="false"
+                          tabindex="0">
+                  </iframe>
+
   <!--Google Maps-->
 </div>
 <footer class="footer-distributed">
@@ -69,9 +124,7 @@
 
         
         <a href="https://www.linkedin.com/company/humpal-design-support/mycompany/?viewAsMember=true">
-            <img src="images/linkedin.svg"/
-                width="30"
-                height="30"><i class="fa fa-linkedin"></i></a>
+            <img src="images/linkedin.svg" width="30" height="30"><i class="fa fa-linkedin"></i></a>
 
       </div>
 
