@@ -207,3 +207,8 @@ h5{
   text-align: center;
   color: white;
 }
+.w-100 {
+  width: 70% !important;
+  height: 75vh;
+  align-items: center;
+}
