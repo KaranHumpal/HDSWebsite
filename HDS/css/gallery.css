@@ -199,3 +199,11 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+.container-fluid{
+  background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
+  height: auto;
+}
+h5{
+  text-align: center;
+  color: white;
+}
