@@ -212,3 +212,13 @@ h5{
   height: 75vh;
   align-items: center;
 }
+#slides{
+  background-color: transparent !important;
+}
+
+.carousel{
+  background-color: transparent !important;
+}
+.carousel .item{
+  background-color:transparent;
+}
