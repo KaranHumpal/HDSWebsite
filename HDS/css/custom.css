@@ -45,13 +45,14 @@
 }
 
 .navbar-brand{
-	padding-top: 5vh;
+	padding-top: 1vh;
 }
 .navbar-header{
 	padding-top: 0px;
 }
 .navbar-nav{
-	
+
+	padding-top: 1vh;
 	font-size: 22px;
 	font-family:'Montserrat', sans-serif ;
 	border-radius: 0;
@@ -104,18 +105,7 @@
 	background-position: center;
 	background-size: cover;
 	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
-	display: flex;
-	justify-content: center;
-	flex-direction: column;
-	text-align: justify;
-
   }
-#aboutcol1{
-	padding-bottom: 135px;
-}
-#aboutcol2{
-	
-}
 #text{
 	font-family: FreeSans;
 	color: black;
@@ -187,88 +177,31 @@ p{
 	font-size: 50;
   }
    
-  /* Styling the area of the slides */
-  #slideshow {
-	overflow: hidden;
-	height: 560px;
-	width: 746px;
-	margin: 0 auto;
-
-  }
-   
-  /* Style each of the sides
-  with a fixed width and height */
-  .slide {
-	float: left;
-	height: 560px;
-	width: 746px;
-  }
-   
-  /* Add animation to the slides */
-  .slide-wrapper {
-	 
-  /* Calculate the total width on the
-	basis of number of slides */
-	width: calc(746px * 4);
-   
-  /* Specify the animation with the
-	duration and speed */
-	animation: slide 15s ease infinite;
-  }
-   
-  /* Set the background color
-  of each of the slides */
-  .slide:nth-child(1) {
-	background-image: url("../images/Haas.JPG");
-    object-fit: cover;
-	border: solid black 3px;
-	
-
-
-  }
-  .slide:nth-child(2) {
-	background-image: url("../images/machine14.jpg");
-	object-fit: cover;
-	border: solid black 3px;
-	
-  }
-   
-  .slide:nth-child(3) {
-	background-image: url("../images/machine2.jpg");
-	object-fit: cover;
-	border: solid black 3px;
-	
-  }
-   
-  .slide:nth-child(4) {
-	background-image: url("../images/machine3.jpg");
-	object-fit: cover;
-	border: solid black 3px;
-	
-  }
-   
-  /* Define the animation
-  for the slideshow */
-  @keyframes slide {
-	 
-  /* Calculate the margin-left for
-	each of the slides */
-	20% {
-	  margin-left: 0px;
-	}
-   
-	40% {
-	  margin-left: calc(-746px * 1);
-	}
-   
-	60% {
-	  margin-left: calc(-746px * 2);
-	}
-   
-	80% {
-	  margin-left: calc(-746px * 3);
-	}
-  }
+  @keyframes slidy {
+    0% { left: 0%; }
+    20% { left: 0%; }
+    25% { left: -100%; }
+    45% { left: -100%; }
+    50% { left: -200%; }
+    70% { left: -200%; }
+    75% { left: -300%; }
+    95% { left: -300%; }
+    100% { left: -400%; }
+    }
+    
+    body { margin: 0; } 
+    div#slider { overflow: hidden; }
+    div#slider figure img { width: 20%; float: left; }
+    div#slider figure { 
+      position: relative;
+      width: 500%;
+      margin: 0;
+      left: 0;
+      text-align: center;
+      font-size: 0;
+      animation: 20s slidy infinite; 
+    }
+    
 .Aboutrow {
 	display: flex;
   }

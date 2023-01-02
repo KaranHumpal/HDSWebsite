@@ -1,25 +1,62 @@
-a {color:#0F7CC1;font-family:serif;text-decoration: none;}         /* Unvisited link  */
-a:visited {color:#0F7CC1;font-family:serif;text-decoration: none;} /* Visited link    */
-a:hover {color:#0F7CC1;font-family:serif;text-decoration: none;}   /* Mouse over link */
-a:active {color:#0F7CC1;font-family:serif;text-decoration: none;}  /* Selected link   */
-.container1{
-    height: 1000px;
-    background-image: url(../HDS/images/rfq-main_1221820543_edit-scaled.jpg);
+@font-face {
+  font-family: PoppinsBold;
+  src: url("../fonts/Poppins-Bold.ttf");
 }
+
+@font-face {
+  font-family: Vampire;
+  src: url("../fonts/Vampire_Wars.otf");
+}
+
+@font-face {
+  font-family: CopperplateBold;
+  src: url("../fonts/CopperplateCC-Bold.ttf");
+}
+
+@font-face {
+  font-family: CopperplateLight;
+  src: url("../fonts/CopperplateCC-Light.otf");
+}
+
+
+@font-face {
+  font-family: FreeSans;
+  src: url("../fonts/Montserrat.ttf");
+}
+
+@media screen and (max-width: 650px) {
+  .navbar a:not(:first-child) {display: none;}
+  .navbar a.icon {
+      display: block;
+      float: right;
+  }
+}
+@media screen and (max-width: 650px) {
+  .navbar.expanded a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+  }
+  .navbar.expanded a {
+      float: none;
+      display: block;
+      text-align: left;
+  }
+}
+
 .navbar-brand{
-  padding-top: 10px;
+padding-top: 1vh;
 }
 .navbar-header{
-  padding-top: 0px;
+padding-top: 0px;
 }
 .navbar-nav{
-  padding-top: 17px;
-  padding-bottom: 0px;
-  padding-left: 25px;
-  font-size: 22px;
-  font-family:'Montserrat', sans-serif ;
-  border-radius: 0;
-  border: 0;
+
+padding-top: 1vh;
+font-size: 22px;
+font-family:'Montserrat', sans-serif ;
+border-radius: 0;
+border: 0;
 }
 
 .footer-distributed {
@@ -208,8 +245,8 @@ h5{
   color: white;
 }
 .w-100 {
-  width: 50% !important;
-  height: 75%;
+  width: 90vw !important;
+  height: 90vw;
   align-items: center;
 }
 .carousel-control-prev{
