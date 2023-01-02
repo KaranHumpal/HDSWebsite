@@ -361,7 +361,7 @@ h4{
 }
 h3 {
   color:#fff;
-  
+  font-size: 40px;
   font-weight: bold;
   font-family: 'Franklin Gothic Medium', sans-serif; 
   line-height: 110%;
@@ -426,6 +426,11 @@ p{
     100% { left: -400%; }
     }
     
+    .slider{
+    	width: 45vw;
+    	height: 45vw;
+
+    }
     body { margin: 0; } 
     div#slider { overflow: hidden; }
     div#slider figure img { width: 20%; float: left; }
@@ -722,6 +727,7 @@ img {vertical-align: middle;}
 	flex-direction: column;
 	justify-content: center;
   	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
+
 }
   
 
@@ -730,8 +736,8 @@ h5{
   color: white;
 }
 .w-100 {
-  width: 90vw !important;
-  height: 90vw;
+  width: 40vw !important;
+  height: 40vw;
   align-items: center;
 }
 .carousel-control-prev{

@@ -197,6 +197,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  display: flex;
 }
 
 /* Next & previous buttons */
@@ -281,6 +282,9 @@ img {vertical-align: middle;}
   background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
   height: auto;
 }
+
+@media only screen and (min-width: 300px) {
+  }
 h5{
   text-align: center;
   color: white;
