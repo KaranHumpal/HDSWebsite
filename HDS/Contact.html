@@ -85,31 +85,45 @@
 
     
 
+<div class ="contcontainer">
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Contact us</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+        
+        <div class="fcf-form-group">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+        </div>
+
+        
+
+    </form>
     </div>
 
-
-    <div class="containerContact">
-      <h1 style="font-size: 35px; text-decoration: underline; padding-top: 3vw;">Contact HDS</h1>
-      <br>
-        <form id="fcf-form-id" class="fcf-form-class" method="post" action="form-to-email.php">
-        <label for="fname">First Name</label>
-        <input style="height:40px" type="text" id="fname" name="firstname" placeholder="Your name..">
-
-        <label for="lname">Last Name</label>
-        <input style="height:40px" type="text" id="lname" name="lastname" placeholder="Your last name..">
-
-        <label for="email">Email Address</label>
-        <input style="height:40px" type="text" id="email" name="email" placeholder="Your email..">
-      
-
-        <label for="subject">Subject</label>
-        <textarea id="subject" name="subject" placeholder="Write something.." style="height:130px"></textarea>
-
-        <input type="submit" value="Submit">
-
-      </form>
-      <br>
-      <br>
+</div>
       <div class="row" style="margin:0 auto; display:block">
         <div class="column" style="position: center; padding-left: 2vw;height: max-content;">
           <p style="font-weight:bold; text-decoration: underline; font-size: 4.2vw;">Address: <p style="font-size: 4.2vw;"> 3338 Arden Road, Hayward CA 94545</p>
