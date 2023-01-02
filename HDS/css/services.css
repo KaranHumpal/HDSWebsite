@@ -203,62 +203,11 @@ input[type="submit"].fcf-btn-block, input[type="reset"].fcf-btn-block, input[typ
     width: 100%;
 }
 
+@media screen and (max-width: 485px){
+	
 
-@media screen and (max-width: 481px){
-
-
-ul {     
-    padding:0;     
-    margin:0 
-    overflow: hidden;   
-}    
-a {    
-    display:block;    
-    text-decoration: none;    
-}    
-#li1{    
-    display:block;     
-    float:left;
-
-}    
-li ul #li1 {    
-    float:none;    
-}    
-li ul {    
-    display:none;     
-    position:absolute;     
-    z-index:1;    
-    
-}    
-li:hover ul {    
-    display:block;    
-}    
-    
-/*DROPDOWN STYLING:*/    
-#menu {    
-    height:30px    
-}    
-#menu a {    
-    color:#024E67;     
-    padding:10px 15px 10px 15px;    
-}    
-
-#menu a:hover {    
-    color:#ffffff;    
-}    
-#menu li {    
-    background-color:#FFF;     
-    border:solid 1px #CCC;      
-    margin-left:-1px    
-}    
-#menu li:hover {    
-    background-color:#0072BA
-
-}  
-.navbar{
-	display: none;
 }
-}
+
 
 @media screen and (min-width: 481px){
 #menu {
@@ -509,16 +458,8 @@ input[type=submit]:hover {
 	font-family: 'Franklin Gothic Medium', sans-serif; 
 }
 
-#columnone{
-	display: flex;
-	justify-content: center;
 
-}
-#columntwo{
-	display: flex;
-	justify-content: center;
 
-}
 /*FOOTER CODE*/
 
 @import url(https://fonts.googleapis.com/css?family=Roboto:400,500,300,700);

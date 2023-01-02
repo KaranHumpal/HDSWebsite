@@ -5,7 +5,7 @@
     <title>Humpal Design Support</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <link rel="icon" type="image/x-icon" href="../HDS/images/Logo.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
@@ -44,7 +44,6 @@
 </html>
   <body class="bodyServices">
     <header>
-
     <ul id='menu'>    
    <img src="../HDS/images/Logo.png"
     width="70"
@@ -52,14 +51,15 @@
     style="float:right;" 
   >
    <li><a href='#'>
-    <img src="../HDS/images/three-lines.jpg"width="20"height="20"></a>    
+    <img src="../HDS/images/three-lines.jpg"width="20"height="20">
+  </a>    
  
      <ul>    
-         <li><a href='index.html'>Home</a></li>    
-         <li><a href='About.html'>About</a></li>    
-         <li><a href='services.html'>Services</a></li>  
-         <li><a href='Gallery.html'>Gallery</a></li>  
-         <li><a href='Contact.html'>Contact</a></li>
+         <li id="li1"><a href='index.html'>Home</a></li>    
+         <li id="li1"><a href='About.html'>About</a></li>    
+         <li id="li1"><a href='services.html'>Services</a></li>  
+         <li id="li1"><a href='Gallery.html'>Gallery</a></li>  
+         <li id="li1"><a href='Contact.html'>Contact</a></li>
      </ul>    
    </li>    
    
@@ -84,12 +84,12 @@
 
 
     <div class="container-fluid" id="servicecontainer">
-    <div class="row" style=" margin:0 auto; display:block; padding-bottom: 0vw;padding-top: 0vw; padding-left: 0vw; padding-right: 0vw;">
+    <div class="row" style=" margin:0 auto; display:flex;justify-content: center; padding-bottom: 0vw;padding-top: 0vw; padding-left: 0vw; padding-right: 0vw;">
         <div class="column" style="display: block;">
            
            
-            <h2 style="font-size: 3.1vw;color:white;text-align: left;font-weight: bold;text-decoration: underline;font-family: 'Franklin Gothic Medium', sans-serif; ">Industries we specialize in:</h2>
-            <div style="float: left; width: 50%;">
+            <h2 style="font-size: 3.2vw;color:white; text-align:center; left;font-weight: bold;text-decoration: underline;font-family: 'Franklin Gothic Medium', sans-serif; padding-bottom: 2vh;padding-top: 2vh;">Industries we specialize in: </h2>
+            <div id ="columnone"style="float: left; width: 50%;">
                 <ul class="press" style="font-size: 2.2vw;text-align: left;color: white;">
                 <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Semi-Conductor</li>
                 <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Aerospace</li>
@@ -97,7 +97,7 @@
                 <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Biotech</li>
                 </ul>
                 </div>
-                <div style="float: right; width: 50%;text-align: left">
+              <div id="columnone"style="float: right; width: 50%;text-align: left">
                 <ul class="press" style="font-size: 2.2vw;color: white; padding-bottom: 7vw;">
                 <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Medical</li>
                 <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Electronics</li>
@@ -107,7 +107,7 @@
                 </div>
   
 
-               <img src="../HDS/images/serv1.JPG" style="padding-top: 0vw; height: auto; width: 40vw;display: block;margin:0 auto;" class="img-fluid">
+               <img src="../HDS/images/serv1.JPG" style="padding-top: 0vw; height: auto; width: 100%;display: block; align:center" class="img-fluid">
 
             
 
@@ -116,8 +116,8 @@
 
 
             
-                <h2 style="font-size: 3.1vw;color: white;text-align: left;font-weight: bold;text-decoration: underline;font-family: 'Franklin Gothic Medium', sans-serif;">Our Services include:</h2>
-                <div style="float: left; width: 50%;">
+                <h2 style="font-size: 3.2vw;color: white;text-align: center;font-weight: bold;text-decoration: underline;font-family: 'Franklin Gothic Medium', sans-serif;padding-bottom: 2.0vh;padding-top: 2.0vh;">Our Services include:</h2>
+                <div id="columnone"style="float: left; width: 50%;">
                     <ul class="press" style="font-size: 2.2vw;text-align: left; color: white;">
                     <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Prototyping</li>
                     <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Production</li>
@@ -127,7 +127,7 @@
                     
                     </ul>
                     </div>
-                    <div style="float: right; width: 50%;text-align: left;">
+                    <div id="columnone"style="float: right; width: 50%;text-align: left;">
                     <ul class="press" style="font-size: 2.2vw;color: white; padding-bottom: 7vw;">
                     <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Fixturing</li>
                     <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Plating/Annodizing</li>
@@ -140,7 +140,7 @@
                 
                   
 
-                    <img src="../HDS/images/serv3.JPG" style="padding-top: 0vw; height: auto; width: 40vw; display: block;margin: 0 auto ;" class="img-fluid">
+                    <img src="../HDS/images/serv3.JPG" style="padding-top: 0vw; height: auto; width: 100%; display: block;" class="img-fluid">
                     
             </div>
 
