@@ -121,7 +121,6 @@ li:hover ul {
 	background-size: cover;
 	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
 	display: flex;
-	flex-diretion: row;
 	justify-content: center;
 	
 	text-align: center;
@@ -197,29 +196,7 @@ p{
 	font-family: 'Franklin Gothic Medium', sans-serif; 
 	line-height: 100%;
 	letter-spacing: 1px;
-	
 }
-   /* Create two equal columns that floats next to each other */
-        .column {
-          float: left;
-          width: 50%;
-          padding: 10px;
-          height: 400px; /* Should be removed. Only for demonstration */
-        }
-        
-        /* Clear floats after the columns */
-        .row:after {
-          content: "";
-          display: table;
-          clear: both;
-        }
-        
-        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-        @media screen and (max-width: 600px) {
-          .column {
-            width: 100%;
-          }
-        }
 .row {
 	display: flex;
 	width: 100%;
@@ -331,33 +308,19 @@ input[type=submit]:hover {
 /* Add a background color and some padding around the form */
 .containerContact {
   border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
   background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
   color: #ffffff;
-
- 
+  justify-content: center;
+  flex-direction: column;
 
 }
-.map-container-2{
-	overflow:hidden;
-	padding-bottom:56.25%;
-	position:relative;
-	height:0;
-  }
-  .map-container-2 iframe{
-	left:0;
-	top:0;
-	height:100%;
-	width:100%;
-	position:absolute;
-  }
 /**Services**/
 #servicecontainer{
 	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: center;
+
 	
 }
 .bodyServices{
@@ -571,7 +534,7 @@ img {vertical-align: middle;}
   	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
 }
   
-}
+
 h5{
   text-align: center;
   color: white;
@@ -594,3 +557,7 @@ h5{
 }
 
 
+.mapcontainter{
+  display: block;
+  margin: 0 auto;
+}

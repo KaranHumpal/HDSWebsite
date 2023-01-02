@@ -11,7 +11,35 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
 
       <link rel="stylesheet" type="text/css" href="css/custom.css"/>
-
+      <style>
+        p{
+          font-size: 25px;
+        }
+        * {
+          box-sizing: border-box;
+        }
+        
+        /* Create two equal columns that floats next to each other */
+        .column {
+          float: left;
+          width: 50%;
+          padding: 10px;
+        }
+        
+        /* Clear floats after the columns */
+        .row:after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+        
+        /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+        @media screen and (max-width: 400px) {
+          .column {
+            width: 100%;
+          }
+        }
+        </style>
   </head>
 </html>
   <body class="bodyServices">
@@ -56,8 +84,8 @@
 
 
     <div class="container-fluid" id="servicecontainer">
-    <div class="row" style="padding-bottom: 9.3vw;padding-top: 9.3vw; padding-left: 1.5vw; padding-right: 1.5vw;">
-        <div class="col" style="flex:50%;">
+    <div class="row" style=" margin:0 auto; display:block; padding-bottom: 0vw;padding-top: 0vw; padding-left: 0vw; padding-right: 0vw;">
+        <div class="column" style="display: block;">
            
            
             <h2 style="font-size: 3.1vw;color:white;text-align: left;font-weight: bold;text-decoration: underline;font-family: 'Franklin Gothic Medium', sans-serif; ">Industries we specialize in:</h2>
@@ -70,7 +98,7 @@
                 </ul>
                 </div>
                 <div style="float: right; width: 50%;text-align: left">
-                <ul style="font-size: 2vw;color: white;">
+                <ul style="font-size: 2vw;color: white; padding-bottom: 7vw;">
                 <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Medical</li>
                 <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Electronics</li>
                 <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Marine</li>
@@ -79,12 +107,12 @@
                 </div>
   
 
-               <img src="../HDS/images/serv1.JPG" height="400"width="600" style="padding-top: 2vw;" class="img-fluid">
+               <img src="../HDS/images/serv1.JPG" style="padding-top: 0vw; height: auto; width: 40vw;" class="img-fluid">
 
             
 
     </div>
-        <div class="col"style="flex:50%;">
+        <div class="column"style="">
 
 
             
@@ -100,7 +128,7 @@
                     </ul>
                     </div>
                     <div style="float: right; width: 50%;text-align: left;">
-                    <ul style="font-size: 2vw;color: white;">
+                    <ul style="font-size: 2vw;color: white; padding-bottom: 7vw;">
                     <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Fixturing</li>
                     <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Plating/Annodizing</li>
                     <li style="font-family: 'Franklin Gothic Medium', sans-serif;">Consultations</li>
@@ -112,7 +140,7 @@
                 
                   
 
-                    <img src="../HDS/images/serv3.JPG"height="400"width="600" style="padding-top: 2vw;" class="img-fluid">
+                    <img src="../HDS/images/serv3.JPG" style="padding-top: 0vw; height: auto; width: 40vw;" class="img-fluid">
                     
             </div>
 
