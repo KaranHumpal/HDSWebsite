@@ -730,6 +730,17 @@ img {vertical-align: middle;}
 
 }
   
+ #boutcontainer{
+ 
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+  	background-image: url("../images/rfq-main_1221820543_edit-scaled.jpg");
+
+}
+  
+
+
 
 h5{
   text-align: center;
